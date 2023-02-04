@@ -25,3 +25,5 @@ Selenium Practice
     //    5. Locate and print the message
     //    6. Close the new window
     //    7. Go back to main window
+
+Finish this by tommorow
