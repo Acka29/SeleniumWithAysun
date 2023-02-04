@@ -1,0 +1,27 @@
+Selenium Practice
+
+ First 2 Task: you can use login_crm() method from CRM_Utilities
+
+    //      TC#1: Iframe practice: Sending Appreciation message test
+    //      1. Users are already login and on the homepage (CRM application)
+    //      2. Users click MORE tab and select APPRECIATION
+    //      3. Users write an Appreciation message
+    //      4. Users click the SEND button
+    //      5. Verify the Appreciation is displayed on the feed
+
+
+    //      TC#2: Sending empty message test
+    //      1. Users are already login and on the homepage  (CRM application)
+    //      2. Users click MORE tab and select APPRECIATION
+    //      3. Users click the SEND button
+    //      4. Verify “The message title is not specified” warning message is displayed on the page
+
+
+    // TC#3 : Windows handle practice
+    //    1. Open browser
+    //    2. Go to website: https://demoqa.com/browser-windows
+    //    3. Click on New Window button
+    //    4. Switch to new window
+    //    5. Locate and print the message
+    //    6. Close the new window
+    //    7. Go back to main window
