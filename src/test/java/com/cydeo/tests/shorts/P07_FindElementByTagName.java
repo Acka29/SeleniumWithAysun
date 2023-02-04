@@ -1,4 +1,4 @@
-package com.cydeo.tests;
+package com.cydeo.tests.shorts;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class P05_FindElementByID {
+public class P07_FindElementByTagName {
 
     public static void main(String[] args) {
 
@@ -14,11 +14,10 @@ public class P05_FindElementByID {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        driver.get("https://google.com");
+        driver.get("https://practice.cydeo.com/");
 
-        WebElement feelingButton = driver.findElement(By.id("gbqfbb"));
+        WebElement header = driver.findElement(By.tagName("h1"));
 
-        feelingButton.click();
-
+        System.out.println("header.getText() = " + header.getText());
     }
 }
