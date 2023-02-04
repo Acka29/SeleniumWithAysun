@@ -1,11 +1,13 @@
-package com.cydeo.tests;
+package com.cydeo.tests.shorts;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class P09_FindElementByPartialLinkText {
+public class P06_FindElementByClassName {
 
     public static void main(String[] args) {
 
@@ -13,12 +15,10 @@ public class P09_FindElementByPartialLinkText {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        driver.get("https://practice.cydeo.com/");
+        driver.get("https://google.com");
 
-        WebElement ABTestingLink = driver.findElement(By.partialLinkText("Testing"));
+        WebElement searchBox = driver.findElement(By.className("gLFyf"));
 
-        ABTestingLink.click();
-
-        driver.quit();
+        searchBox.sendKeys("apple" + Keys.ENTER);
     }
 }

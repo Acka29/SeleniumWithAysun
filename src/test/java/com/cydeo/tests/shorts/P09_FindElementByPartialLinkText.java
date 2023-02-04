@@ -1,11 +1,11 @@
-package com.cydeo.tests;
+package com.cydeo.tests.shorts;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class P08_FindElementByLinkText {
+public class P09_FindElementByPartialLinkText {
 
     public static void main(String[] args) {
 
@@ -15,8 +15,10 @@ public class P08_FindElementByLinkText {
 
         driver.get("https://practice.cydeo.com/");
 
-        WebElement ABTestingLink = driver.findElement(By.linkText("A/B Testing"));
+        WebElement ABTestingLink = driver.findElement(By.partialLinkText("Testing"));
 
         ABTestingLink.click();
+
+        driver.quit();
     }
 }
